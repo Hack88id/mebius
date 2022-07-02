@@ -1,0 +1,56 @@
+import os
+import time
+import re
+
+time.sleep(3)
+print ("\033[1;31m")
+
+k = ("""
+           ,__,
+           (oo)____
+           (__)    )\\
+              ||--|| *
+
+     [*]ZHF31 mebius 13FHZ[*]
+""")
+
+print(k)
+
+while True:
+	t = input ("\033[1;31mZHF31 >> \033[1;0m")
+	if t not in("help","clear","ddos","wl","bffb","bfins","info",""," ",):
+		print ("comman",t,"not found")
+		print ("type `help` to show command")
+	if t =="help":
+		print("""
+comman      fungsi
+------      ------
+help        memunculkan bantuan
+clear       bersihkan layar
+wl          membuat wordlist
+ddos        ddos web
+bffb        bruteforce facebook
+bfins       bruteforce instagram
+info        info os
+""")
+	elif t =="clear":
+		os.system("clear")
+		os.system("python z.py")
+	elif t =="wl":
+		os.system('python2 wlt.py')
+	elif t =="ddos":
+		os.system('python hammer.py')
+	elif t =="info":
+		print ("""
+          OS INFO
+
+AUTHOR       : TS HACKER
+GITHUB       : Hack88id
+TEAM         : INDO HACK TEAM
+MADE A DATE  : 18/06/2022
+""")
+	elif t =="bffb":
+		print (" k ")
+except:
+KeyboardInterrupt
+	print ("[!] EXIT PROGRAM")
